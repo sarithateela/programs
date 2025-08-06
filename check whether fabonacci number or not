@@ -1,0 +1,20 @@
+import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+     
+      System.out.println(isfabinocci(144));
+    }
+    public static boolean isfabinocci(int n)
+    {
+       return isperfectSquareRoot(5*(n*n)+4) || isperfectSquareRoot(5*(n*n)-4);
+    }
+    public static boolean isperfectSquareRoot(int x){
+        
+       int s=(int)Math.sqrt(x);
+       if(s*s==x)return true;
+       return false;
+       
+    }
+}
